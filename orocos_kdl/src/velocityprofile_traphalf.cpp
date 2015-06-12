@@ -42,6 +42,10 @@
 
 //#include "error.h"
 #include "velocityprofile_traphalf.hpp"
+#if (_MSC_VER == 1800)
+// ... Visual Studio 2013
+	#include <algorithm>
+#endif
 
 namespace KDL {
 
